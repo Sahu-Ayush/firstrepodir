@@ -19,3 +19,15 @@ git push -u origin master
 You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
 
+
+########################
+git error: failed to push some refs to remote
+
+Solution:
+
+If the GitHub repo has seen new commits pushed to it, while you were working locally, I would advise using:
+git pull --rebase origin master
+git push origin master
+
+
+
